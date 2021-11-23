@@ -8,23 +8,8 @@ using System.Threading.Tasks;
 
 namespace WPF_Connect6.ViewModels
 {
-    public class MainWindowViewModel : INotifyPropertyChanged
+    public class MainWindowViewModel : BaseViewModel
     {
 
-        #region notifyproperty
-        public event PropertyChangedEventHandler PropertyChanged;
-        //private void NotifyPropertyChanged(string propertyName)
-        //{
-        //    if(this.PropertyChanged != null)
-        //    {
-        //        this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        //    }
-        //}
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        #endregion
     }
 }
